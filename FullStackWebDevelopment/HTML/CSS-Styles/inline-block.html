@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elemenst</title>
+    <style>
+        .p1 {
+            display: inline;
+            background-color: aqua;
+            width: 200px;
+            height: 150px;  /*height and width donot work in inline elements*/
+        }
+        span {
+            display: block;
+            background-color: aquamarine;
+            margin-bottom: 5px;
+            width: 100px;
+            height: 75px;
+            
+        }
+
+        .inline-block-element {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+        }
+
+        .element1 {
+            background-color: lightblue;
+        }
+
+        .element2 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working on inline, block level and inline-block elements</h1>
+    <p>Block level elements take width of their parents width</p>
+    <div>
+        <p class="p1">Block level elements take width of their parents width</p>
+        <p class="p1">Block level take width of their parents width</p>
+    </div>
+    <div>
+        <span>i am inline element </span>
+        <span>i am inline element</span>
+    </div>
+
+
+    <div class="container">
+        <span class="inline-block-element element1">Inline-Block Element 1</span>
+        <span class="inline-block-element element2">Inline-Block Element 2</span>
+    </div>
+
+</body>
+
+</html>
