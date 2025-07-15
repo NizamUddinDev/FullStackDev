@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <style>
+        .container p {
+            color: brown;
+            font-size: 10px;
+        }
+
+        .container1>p {
+            color: cornflowerblue;
+        }
+
+        .container2+pre {
+            color: black;
+        }
+
+        img+figcaption {
+            border: 4px solid black;
+        }
+        h3 ~ p{
+            color: rgb(10, 86, 86);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descendant Combinators</h1>
+    <p>Target elements matched by the second selector if they are nested within an ancestor element that matches the first selector.</p>
+    <p>This applies on all selected descenant elements</p>
+    <div class="container">
+        <p>This is direct child</p>
+        <div>
+            <p>I am descendant child</p>
+        </div>
+    </div>
+
+    <h2>Child Combinators (>)</h2>
+    <p>select elements that are direct children of a specified parent element.</p>
+    <p>This works only on parent`s direct child element not other</p>
+    <div class="container1">
+        <p>This is direct child</p>
+        <div>
+            <p>I am descendant child</p>
+        </div>
+    </div>
+
+    <h2>Next sibling Combinators (+)</h2>
+    <p>selects an element that immediately follows a specified sibling element. This combinator is useful when you want to apply styles to an element that directly follows another element</p>
+    <p>This Combinator works only on immediate sibling not next next immediate sibling</p>
+    <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back." />
+        <figcaption>A cute orange cat lying on its back.</figcaption>
+        <figcaption>A cute orange cat lying on its back.</figcaption>
+
+    </figure>
+
+    <h2>subsequent-sibling combinator (~)</h2>
+    <p> the subsequent-sibling combinator (~) can target any siblings that follow the specified element</p>
+    <div class="container2"> 
+        <h3>Subheadings</h3>
+        <p>First paragraph.</p>
+        <p>Second paragraph.</p>
+        <p>Third paragraph.</p>
+        <p>Another paragraph element</p>
+    </div>
+
+</body>
+
+</html>
