@@ -10,7 +10,8 @@
             display: inline;
             background-color: aqua;
             width: 200px;
-            height: 150px;  /*height and width donot work in inline elements*/
+            height: 150px;  /*height and width donot work in inline elements
+                            but works in block level and inline-block level elements*/
         }
         span {
             display: block;
@@ -34,11 +35,12 @@
         .element2 {
             background-color: lightgreen;
         }
+        
     </style>
 </head>
 
 <body>
-    <h1>Working on inline, block level and inline-block elements</h1>
+    <h1>Working on inline, block level and inline-block properties</h1>
     <p>Block level elements take width of their parents width</p>
     <div>
         <p class="p1">Block level elements take width of their parents width</p>
