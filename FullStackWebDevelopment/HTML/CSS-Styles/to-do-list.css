@@ -1,0 +1,25 @@
+/* Remove default text decoration from links */
+.sub-item-link {
+  text-decoration: none;
+  color: teal; /* Default link color */
+}
+
+/* Visited link */
+.sub-item-link:visited {
+  color: purple;
+}
+
+/* Hover effect */
+.sub-item-link:hover {
+  color: orange;
+}
+
+/* Focus (when tabbed) */
+.sub-item-link:focus {
+  outline: 2px solid red;
+}
+
+/* Active (when clicked) */
+.sub-item-link:active {
+  color: green;
+}
