@@ -1,0 +1,49 @@
+/* Blog Post Card Styles */
+.blog-post-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;       /* You can choose any width */
+  text-align: center; /* You can change to left or right if you want */
+  overflow: hidden;   /* Ensures image and corners align */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 30px auto;
+}
+
+/* Image Styling */
+.post-img {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Content Styling */
+.post-content {
+  padding: 15px;
+}
+
+/* Title and Excerpt Styling */
+.post-title {
+  color: #333;
+  margin: 10px 0;
+}
+
+.post-excerpt {
+  color: #555;
+  margin: 10px 0;
+}
+
+/* Read More Button Styling */
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
